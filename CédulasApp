@@ -1,0 +1,68 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+int valor;
+int divint,resto;
+string msg="Valor Invalido";
+valor=0;
+divint=0;
+divmodular=0;
+
+
+    cout << "Insira um valor a ser sacado" << endl;
+    cin >>valor;
+    if ((valor==0) or (valor<0))
+    {
+            cout<<msg;
+    }
+    else if(valor==1)
+    {
+        cout<<msg;
+    }
+    else if (valor>100)
+    {
+        divint=valor/100;
+        resto=valor-divint;
+        if (resto>50)
+        {
+            divint=valor/50;
+            resto=valor-divint;
+            if (resto>20)
+            {
+                divint=valor/20;
+                resto=valor-divint;
+            }
+        }
+    }
+    else if(valor>50)
+    {
+        divint=valor/50;
+        resto=valor-divint;
+    }
+    else if (valor>20)
+    {
+        divint=valor/20;
+        resto=valor-divint;
+
+    }
+    else if (valor>10)
+    {
+        divint=valor/10;
+        resto=valor-divint;
+    }
+    else if (valor>5)
+    {
+        divint=valor/5;
+        resto=valor-divint;
+    }
+    else if (valor>2)
+    {
+        divint=valor/2;
+        resto=valor-divint;
+    }
+
+    return 0;
+}
